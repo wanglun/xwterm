@@ -24,7 +24,7 @@
 #include <list>
 #include <map>
 
-#include "util\strcmp.hpp"
+#include "util/strcmp.hpp"
 
 typedef enum
 {
