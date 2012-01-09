@@ -1,0 +1,10 @@
+{
+	"title": "xwterm",
+	"type": "pdk",
+	"main": "xwterm_plugin",
+    "icon": "pdk_logo_64x64.png",
+	"id": "com.xwteam.app.xwterm",
+	"version": "0.1.1",
+	"vendor": "xwteam",
+    "requiredMemory": 15
+}
