@@ -70,7 +70,7 @@ SDLCore::SDLCore()
 	m_nHeight = 0;
 
 	m_surface = NULL;
-	m_nFontSize = 12;
+	m_nFontSize = 15;
 	m_foregroundColor = COLOR_WHITE_BRIGHT;
 	m_backgroundColor = COLOR_BLACK;
 
