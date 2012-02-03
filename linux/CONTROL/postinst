@@ -1,0 +1,22 @@
+#!/bin/sh
+SETUP_JAILS_FILE="/etc/event.d/finish-poststart.d/020-setup_jails"
+NOJAIL_FILE="/etc/nojail"
+
+jailbreak()
+{
+    echo "pardon" > "$NOJAIL_FILE"
+    if [ -f "$SETUP_JAILS_FILE" ]; then
+        sed -i "s/^\(rm\ -f\ \/etc\/nojail\)/#\1/g" "$SETUP_JAILS_FILE"
+    fi
+}
+
+echo "pardon" > "$NOJAIL_FILE"
+if [ $? -ne 0 ]; then
+    rootfs_open -w
+    jailbreak
+    rootfs_open -t
+else
+    jailbreak
+fi
+
+exit 0
