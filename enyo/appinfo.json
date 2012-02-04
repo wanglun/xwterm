@@ -1,8 +1,8 @@
 {
-	"title": "xwterm",
+	"title": "xwTerm",
 	"type": "pdk",
 	"main": "xwterm_plugin",
-    "icon": "pdk_logo_64x64.png",
+    "icon": "logo.png",
 	"id": "com.xwteam.app.xwterm",
 	"version": "0.1.0",
 	"vendor": "xwteam",
