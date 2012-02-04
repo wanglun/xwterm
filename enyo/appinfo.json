@@ -2,7 +2,7 @@
 	"title": "xwTerm",
 	"type": "pdk",
 	"main": "xwterm_plugin",
-    "icon": "logo.png",
+    "icon": "images/logo.png",
 	"id": "com.xwteam.app.xwterm",
 	"version": "0.1.0",
 	"vendor": "xwteam",
