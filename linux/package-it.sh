@@ -8,4 +8,5 @@ rsync -r --exclude=.DS_Store --exclude=.svn ../enyo/ STAGING
 cp Build_Device/xwterm_plugin STAGING
 echo "filemode.755=xwterm_plugin" > STAGING/package.properties
 
+#palm-package STAGING
 sh packager.sh STAGING CONTROL

@@ -24,7 +24,7 @@ then
     CTRLS=`ls $CONTROL`
     gunzip control.tar.gz
     cp control.tar $CONTROL && cd $CONTROL
-    tar rf control.tar $CTRLS && mv control.tar .. && cd .. 
+    tar --owner root --group root -r -f control.tar ./$CTRLS && mv control.tar .. && cd .. 
     gzip control.tar
 fi
 ar r $IPK $IPK_FILES
